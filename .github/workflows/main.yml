@@ -33,6 +33,7 @@ jobs:
         run: echo "$HOME/.poetry/bin" >> $GITHUB_PATH
       
       - name: Install dependencies
+        run: poetry env use python3.9
         run: poetry install 
       
       - name: black
