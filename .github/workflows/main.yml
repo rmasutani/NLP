@@ -32,6 +32,9 @@ jobs:
       - name: Add path for Poetry
         run: echo "$HOME/.poetry/bin" >> $GITHUB_PATH
       
+      - name: Display Python version
+        run: python -c "import sys; print(sys.version)"
+      
       - name: Specify python version
         run: poetry env use python3.9
 
